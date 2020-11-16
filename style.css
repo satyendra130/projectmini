@@ -74,7 +74,7 @@ body {
   }
   
   code{
-    background-color: hsl(132, 12%, 92%);
+    background-color:wheat;
     display:block;
     line-height: 2;
     white-space: pre;
