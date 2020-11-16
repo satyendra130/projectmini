@@ -125,4 +125,10 @@ body {
   #list,#list1{
     list-style-type: none;
   }
+#navbar{
+overflow: hidden;
+overflow-y: scroll;
+background: #f1f1f1;
+}
+
   
