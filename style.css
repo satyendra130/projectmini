@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans',Arial,sans-serif;
     line-height: 1.5;
     color: hsl(0, 0%, 20%);
+    background-color:rgb(180, 172, 211);
   }
   
   h1, h2 {
@@ -50,8 +51,8 @@ body {
   }
   
   .nav-link {
-    text-decoration: inherit;
-    color: inherit;
+    text-decoration:underline;
+    color:blue;
   }
   
   main {
@@ -69,10 +70,11 @@ body {
   
   .main-section {
     text-align: justify;
+    text-decoration:inherit;
   }
   
   code{
-    background-color: hsl(50, 90%, 96%);
+    background-color: hsl(132, 12%, 92%);
     display:block;
     line-height: 2;
     white-space: pre;
@@ -115,7 +117,7 @@ body {
   #hello,#table {
     background-color:wheat;
   }
-  #tab,tr,td,th{border: 1px solid blue;
+  #tab,tr,td,th{border: 1px solid white;
     border-spacing: 0px;
     text-align: center;
   }
