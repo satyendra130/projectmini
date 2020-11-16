@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" type="text/css" href="style.css">
+        <title>C Documentation Page</title>
+    </head>
+    <body>        
+          <nav id="navbar">
+            <header>
+              <h1>Basics of C Language</h1>
+            </header>
+            <ol id="nav-list">
+              <a href="#Introduction" class="nav-link" target="blank"><li>Introduction</li></a>
+              <a href="#Why to learn C programming" class="nav-link" target="blank"><li>Why to learn C programming</li></a>
+              <a href="#Facts about C" class="nav-link" target="_blank"><li>Facts about C</li></a>
+              <a href="#Hello World using C Programming." class="nav-link" target="blank"><li>Hello World using C Programming.</li></a>
+              <a href="#C basic syntax" class="nav-link" target="blank"><li>C basic syntax</li></a>
+              <a href="#C Datatypes" class="nav-link" target="blank"><li>C Datatypes</li></a>
+              <a href="#Variables" class="nav-link" target="blank"><li>Variables</li></a>
+              <a href="#Storage Classes in C" class="nav-link" target="blank"><li>Storage Classes in C</li></a>
+              <a href="#Constants" class="nav-link" target="blank"><li>Constants</li></a>
+              <a href="#Decision Making" class="nav-link" target="blank"><li>Decision Making</li></a>
+              <a href="#Loops" class="nav-link" target="blank"><li>Loops in C</li></a>
+              <a href="#Functions" class="nav-link" target="blank"><li>Functions in C</li></a>
+              <a href="#Function_declarations" class="nav-link" target="blank"><li>Function declarations</li></a>
+              <a href="#Arrays" class="nav-link" target="blank"><li>Arrays in C</li></a>
+              <a href="#Pointers" class="nav-link" target="blank"><li>Pointers in C</li></a>
+              <a href="#Strings" class="nav-link" target="blank"><li>Strings in C</li></a>
+              <a href="#Structure" class="nav-link" target="blank"><li>Structure in C</li></a>
+              <a href="#Unions" class="nav-link" target="blank"><li>Unions in C</li></a>
+              <a href="#Reference" class="nav-link" target="blank"><li>Reference</li></a>
+               </ol>               
+          </nav>
+          <main id="main-doc">
+            <section id="Introduction" class="main-section">
+              <header>
+                  <h2>Introduction</h2>
+              </header>
+              <article>
+                <p>                               
+                  C programming is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.
+              </p>
+              <p>
+                C LANGUAGE IS A STRUCTURED LANGUAGE:
+                
+                In this type of language, large programs are divided into small programs called functions. <br>
+                Prime focus is on functions and procedures that operate on the data and the<br>
+                Data moves freely around the systems from one function to another.<br>
+                Program structure follows “Top Down Approach”<br>
+                Examples: C, Pascal, ALGOL and Modula-2<br>               
+              </p>
+              </article>
+            </section>
+              <section id="Why to learn C programming" class="main-section">
+              <header>
+                <h2>Why to learn C programming ?</h2>
+              </header>
+              <article>
+              <p>C programming language is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning C Programming:</p>
+              <p>
+                </p><ol>
+                  <li>Easy to learn</li>
+                   
+                   <li>Structured language</li>
+                   
+                   <li>It produces efficient programs</li>
+                   
+                   <li>It can handle low-level activities</li>
+                   
+                   <li>It can be compiled on a variety of computer platforms</li>                   
+                   </ol>             
+              </article>
+            </section>        
+            <section id="Facts about C" class="main-section">
+              <header>
+                <h2>Facts about C</h2>
+              </header>
+              <article>
+                <ol>
+                        <li>C was invented to write an operating system called UNIX.</li>
+                        <li>C is a successor of B language which was introduced around the early 1970s.</li>
+                        <li>The language was formalized in 1988 by the American National Standard Institute (ANSI).</li>
+                        <li>The UNIX OS was totally written in C.</li>
+                        <li>Today C is the most widely used and popular System Programming Language.</li>
+                </ol>
+                    </article>
+            </section>            
+            <section id="Hello World using C Programming." class="main-section">
+              <header>
+                <h2>Hello World using C Programming.</h2>
+                </header>              
+              <article>
+              <p>Just to give you a little excitement about C programming, I'm going to give you a small conventional C Programming Hello World program.</p>
+                <b>
+                  <code>
+                #include&lt;stdio.h&gt;
+                int main() {
+                    /* my first program in C */
+                    printf("Hello, World! \n");                    
+                    return 0;
+                 }</code>
+                 </b>
+                 <h2>Applications of C Programming</h2>
+                     <h4>C was initially used for system development work, particularly the programs that make-up the operating system. C was adopted as a system development language because it produces code that runs nearly as fast as the code written in assembly language. Some examples of the use of C are -</h4>
+                     <ol>
+                         <li>Operating Systems</li>
+                         <li>Language Compilers</li>
+                         <li>Assemblers</li>
+                         <li>Text Editors</li>
+                         <li>Language Interpreters</li>
+                         <li>Network Drivers</li>
+                     </ol>
+            </article>
+            </section>        
+            <section id="C basic syntax" class="main-section">
+              <header>
+                <h2>C basic syntax</h2>
+              </header>
+              <article>
+                <h3>Tokens in C</h3>
+                <p>A C program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following C statement consists of five tokens −
+                  printf("Hello, World! \n");<br>
+                  The individual tokens are −<br>                  
+                  printf<br>
+                  (
+                     "Hello, World! \n"<br>
+                  )
+                  ;</p>
+                  <h3>Semicolons</h3>
+                  <p>In a C program, the semicolon is a statement terminator. That is, each individual statement must be ended with a semicolon. It indicates the end of one logical entity.
+                    Given below are two different statements −
+                    <code>                    
+                    printf("Hello, World! \n");
+                    return 0;
+                  </code>
+                </p>
+                    <h3>Identifier</h3>
+                    <p>A C identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z, a to z, or an underscore '_' followed by zero or more letters, underscores, and digits (0 to 9).
+                        C does not allow punctuation characters such as @, $, and % within identifiers. C is a case-sensitive programming language. Thus, temp and Temp are two different identifiers in C.</p>
+                    <h3>Keywords</h3>
+                    <p>The following list shows the reserved words in C. These reserved words may not be used as constants or variables or any other identifier names.</p>
+                    <table id="table">
+                      <tbody><tr>
+                        <th>1.auto   </th>
+                        <th> 2.extern</th>
+                        <th> 3.long</th>
+                        <th> 4.switch</th>
+                        <th>5.do</th>                                              
+                      </tr>
+                      <tr>
+                        <th>6.break</th>
+                        <th>7.enum</th>		
+                        <th>8.register</th>
+                        <th>9.typedef</th>
+                        <th>10.int</th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                      <th>11.case</th>
+                      <th>12.else</th>
+                      <th>13.return</th>
+                      <th>14.union</th>
+                      <th>15.char</th>
+                      </tr>
+                      <tr>
+                        <th>16.float</th>
+                        <th>17.short</th>
+                        <th>18.unsigned</th>
+                        <th>17.const</th>
+                        <th>19.void</th>
+                      </tr>
+                      <tr>
+                        <th>20.for</th>
+                        <th>21.signed</th>
+                        <th>22.continue</th>
+                        <th>23.goto</th>
+                        <th>24.sizeof</th>
+                      </tr>
+                      <tr>
+                        <th>25.volatile</th>
+                        <th>26.default</th>
+                        <th>27.if</th>
+                        <th>28.static</th>
+                        <th>29.while</th>
+                      </tr>
+                      <tr>
+                        <th>30.struct</th>
+                        <th>31.Packed</th>
+                        <th>32.double</th>
+                      </tr>
+                    </tbody></table>                    
+                    </article>
+            </section>        
+            <section id="C Datatypes" class="main-section">
+              <header>
+                <h2>Datatypes in C</h2>
+              </header>
+              <article>
+              <p>Each variable in C has an associated data type. Each data type requires different amounts of memory and has some specific operations which can be performed over it. Let us briefly describe them one by one:
+                Following are the examples of some very common data types used in C:</p>
+                <ol>
+                  <li>char: The most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.</li>
+                  <li>int: As the name suggests, an int variable is used to store an integer.</li>
+                  <li>float: It is used to store decimal numbers (numbers with floating point value) with single precision.</li>
+                  <li>double: It is used to store decimal numbers (numbers with floating point value) with double precision. </li>
+                </ol>
+                <p>1. BASIC DATA TYPES IN C LANGUAGE:</p>
+                <h4>1.1. INTEGER DATA TYPE:</h4>
+                <ol>
+                  <li>Integer data type allows a variable to store numeric values.</li>
+                  <li>“int” keyword is used to refer integer data type.</li>
+                  <li>The storage size of int data type is 2 or 4 or 8 byte.</li>
+                  <li>It varies depend upon the processor in the CPU that we use.  If we are using 16 bit processor, 2 byte  (16 bit) of memory will be allocated for int data type.</li>
+                  <li>Like wise, 4 byte (32 bit) of memory for 32 bit processor and 8 byte (64 bit) of memory for 64 bit processor is allocated for int datatype.</li>
+                  <li>int (2 byte) can store values from -32,768 to +32,767 and 
+                    int (4 byte) can store values from -2,147,483,648 to +2,147,483,647.</li>
+                  <li>If you want to use the integer value that crosses the above limit, you can go for “long int” and “long long int” for which the limits are very high.</li>
+                </ol>
+                <h4>1.2. CHARACTER DATA TYPE:</h4>
+                <ol>
+                  <li>Character data type allows a variable to store only one character.</li>
+                  <li>Storage size of character data type is 1. We can store only one character using character data type.</li>
+                  <li>“char” keyword is used to refer character data type.</li>
+                  <li>For example, ‘A’ can be stored using char datatype. You can’t store more than one character using char data type.</li>
+                </ol>
+                <h4>1.3. FLOATING POINT DATA TYPE:</h4>
+                <h4>Float</h4>
+                <ol>
+                  <li>Float data type allows a variable to store decimal values.</li>
+                  <li>Storage size of float data type is 4. This also varies depend upon the processor in the CPU as “int” data type.</li>
+                  <li>We can use up-to 6 digits after decimal using float data type.</li>
+                  <li>For example, 10.456789 can be stored in a variable using float data type.</li>
+                </ol>
+                <h4>Double</h4>
+                <ol>
+                  <li>Double data type is also same as float data type which allows up-to 10 digits after decimal.</li>
+                  <li>the range for double datatype is from 1E–37 to 1E+37.</li>
+                </ol>
+              </article>
+            </section>
+        
+            <section id="Variables" class="main-section">
+              <header>
+                <h2>Variables in C</h2>
+              </header>
+              <article>
+             <p>A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+                The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C is case-sensitive. Based on the basic types explained in the previous chapter, there will be the following basic variable types −
+              </p>
+              <h4>Variable definition in C</h4>
+              <p>A variable definition tells the compiler where and how much storage to create for the variable. A variable definition specifies a data type and contains a list of one or more variables of that type as follows −
+        
+                type variable_list;<br>
+                Here, type must be a valid C data type including char, w_char, int, float, double, bool, or any user-defined object; and variable_list may consist of one or more identifier names separated by commas. Some valid declarations are shown here −
+                
+                int    i, j, k;<br>
+                char   c, ch;<br>
+                float  f, salary;<br>
+                double d;<br>
+                The line int i, j, k; declares and defines the variables i, j, and k; which instruct the compiler to create variables named i, j and k of type int.
+                
+                Variables can be initialized (assigned an initial value) in their declaration. The initializer consists of an equal sign followed by a constant expression as follows −<br>
+                
+                type variable_name = value;</p>
+                <h4>Variable declaration in C</h4>
+                <p> variable declaration provides assurance to the compiler that there exists a variable with the given type and name so that the compiler can proceed for further compilation without requiring the complete detail about the variable. A variable definition has its meaning at the time of compilation only, the compiler needs actual variable definition at the time of linking the program.
+                  A variable declaration is useful when you are using multiple files and you define your variable in one of the files which will be available at the time of linking of the program. You will use the keyword extern to declare a variable at any place. Though you can declare a variable multiple times in your C program, it can be defined only once in a file, a function, or a block of code.
+                  </p>              
+              </article>
+            </section>        
+            <section id="Storage Classes in C" class="main-section">
+              <header>
+                <h2>Storage Classes in C</h2>
+              </header>
+              <article>
+              <p>A storage class defines the scope (visibility) and life-time of variables and/or functions within a C Program. They precede the type that they modify. We have four different storage classes in a C program −</p>
+              <ol>
+                <li>auto</li>
+                <li>static</li>
+                <li>register</li>
+                <li>extern</li>
+              </ol>
+              <h4>AUTO</h4>
+              <p>The auto storage class is the default storage class for all local variables.        
+                {
+                   int mount;<br>
+                   auto int month;<br>
+                }
+                The example above defines two variables with in the same storage class. 'auto' can only be used within functions, i.e., local variables.</p>
+                <h4>STATIC</h4>
+                <p>The static storage class instructs the compiler to keep a local variable in existence during the life-time of the program instead of creating and destroying it each time it comes into and goes out of scope. Therefore, making local variables static allows them to maintain their values between function calls.
+        
+                  The static modifier may also be applied to global variables. When this is done, it causes that variable's scope to be restricted to the file in which it is declared.
+                  
+                  In C programming, when static is used on a global variable, it causes only one copy of that member to be shared by all the objects of its class.</p>
+                <b>
+                  <code>                                 
+                  #include &lt;stdio.h&gt;
+
+                  /* function declaration */
+                  void func(void);                   
+                  static int count = 5; /* global variable */                   
+                  main() {                  
+                     while(count--) {
+                        func();
+                     }                    
+                     return 0;
+                  }
+                  
+                  /* function definition */
+                  void func( void ) {                  
+                     static int i = 5; /* local static variable */
+                     i++;                  
+                     printf("i is %d and count is %d\n", i, count);
+                  }
+                </code>
+                </b>
+                <b>
+                  <code>
+                  When the above code is compiled and executed, it produces the following result −
+        
+                  i is 6 and count is 4
+                  i is 7 and count is 3
+                  i is 8 and count is 2
+                  i is 9 and count is 1
+                  i is 10 and count is 0
+                  </code>
+                  </b>
+                  <h4>REGISTER</h4>
+                  <p>the register storage class is used to define local variables that should be stored in a register instead of RAM. This means that the variable has a maximum size equal to the register size (usually one word) and can't have the unary '&amp;' operator applied to it (as it does not have a memory location).
+                  <b>
+                    <code>
+                    {
+                       register int  miles;
+                    }
+                    </code>
+                    </b>
+                    <p>The register should only be used for variables that require quick access such as counters. It should also be noted that defining 'register' does not mean that the variable will be stored in a register. It means that it MIGHT be stored in a register depending on hardware and implementation restrictions.</p>
+                  <h4>EXTERN</h4>
+                  <p>The extern storage class is used to give a reference of a global variable that is visible to ALL the program files. When you use 'extern', the variable cannot be initialized however, it points the variable name at a storage location that has been previously defined.        
+                    When you have multiple files and you define a global variable or function, which will also be used in other files, then extern will be used in another file to provide the reference of defined variable or function. Just for understanding, extern is used to declare a global variable or function in another file.                    
+                    The extern modifier is most commonly used when there are two or more files sharing the same global variables or functions.</p>                  
+                  </article>
+            </section>        
+            <section id="Constants" class="main-section">
+              <header>
+                <h2>Constants</h2>
+              </header>
+              <article>
+                <p>Constants refer to fixed values that the program may not alter during its execution. These fixed values are also called literals.</p>              
+              <p>Constants can be of any of the basic data types like an integer constant, a floating constant, a character constant, or a string literal. There are enumeration constants as well.</p>
+              <p>Constants are treated just like regular variables except that their values cannot be modified after their definition.</p>
+              <h3>Integer Literals</h3>
+              <p>An integer literal can be a decimal, octal, or hexadecimal constant. A prefix specifies the base or radix: 0x or 0X for hexadecimal, 0 for octal, and nothing for decimal.</p>
+              <p>An integer literal can also have a suffix that is a combination of U and L, for unsigned and long, respectively. The suffix can be uppercase or lowercase and can be in any order.</p>
+              <b>
+                <p>Here are some examples of integer literals −</p>
+                <code>
+                  212         /* Legal */
+                  215u        /* Legal */
+                  0xFeeL      /* Legal */
+                  078         /* Illegal: 8 is not an octal digit */
+                  032UU       /* Illegal: cannot repeat a suffix */
+                </code>
+              </b>      
+              <p>Following are other examples of various types of integer literals −</p>
+              <b>
+                <code>
+                  85         /* decimal */
+                  0213       /* octal */
+                  0x4b       /* hexadecimal */
+                  30         /* int */
+                  30u        /* unsigned int */
+                  30l        /* long */
+                  30ul       /* unsigned long */
+                </code>
+              </b>      
+              <h3>Character Constants</h3>
+              <p>Character literals are enclosed in single quotes, e.g., 'x' can be stored in a simple variable of char type.
+
+                A character literal can be a plain character (e.g., 'x'), an escape sequence (e.g., '\t'), or a universal character (e.g., '\u02C0').
+                
+                There are certain characters in C that represent special meaning when preceded by a backslash for example, newline (\n) or tab (\t).                
+                </p>
+                <p>Following is the example to show a few escape sequence characters −</p>
+                <b>
+                  <code>
+                  #include &lt;stdio.h&gt;
+                  int main() {
+                  printf("Hello\tWorld\n\n");
+                  return 0;
+                      }
+                  </code>
+                </b>
+                <p>When the above code is compiled and executed, it produces the following result −</p>
+                <b>
+                  <code>
+                    Hello World
+                  </code>
+                </b>
+                <h3>String Literals</h3>
+                <p>String literals or constants are enclosed in double quotes "". A string contains characters that are similar to character literals: plain characters, escape sequences, and universal characters.</p>
+                <p>You can break a long line into multiple lines using string literals and separating them using white spaces.</p>
+                <p>Here are some examples of string literals. All the three forms are identical strings.</p>
+                <b>
+                  <code>
+                    "hello, dear"
+
+                    "hello, \
+                    
+                      dear"
+                    
+                    "hello, " "d" "ear"
+                  </code>
+                </b>
+                <h3>Defining Constants</h3>
+                <p>There are two simple ways in C to define constants −</p>
+                <ul>
+                  <li>Using #define preprocessor.</li>
+                  <li>Using <b>const</b> keyword.</li>
+                </ul>
+                <h3>The #define Preprocessor</h3>
+                <p>Given below is the form to use #define preprocessor to define a constant −</p>
+                <b>
+                  <code>
+                    #define identifier value
+                  </code>
+                </b>
+                <p>The following example explains it in detail −</p>
+                <b>
+                  <code>                    
+                  #include &lt;stdio.h&gt;
+
+                  #define LENGTH 10   
+                  #define WIDTH  5
+                  #define NEWLINE '\n'
+
+                  int main() {
+                  int area;  
+  
+                  area = LENGTH * WIDTH;
+                  printf("value of area : %d", area);
+                  printf("%c", NEWLINE);
+
+                  return 0;
+                      }
+                  </code>
+                </b>
+                <p>When the above code is compiled and executed, it produces the following result −</p>
+                <b>
+                  <code>
+                    value of area : 50
+                  </code>
+                </b>
+                <h3>The const Keyword</h3>
+                <p>You can use const prefix to declare constants with a specific type as follows −</p>
+                <b>
+                  <code>
+                    const type variable = value;
+                  </code>
+                </b>
+                <p>The following example explains it in detail −</p>
+                <b>
+                  <code>
+                    #include <stdio.h>
+
+                      int main() {
+                         const int  LENGTH = 10;
+                         const int  WIDTH = 5;
+                         const char NEWLINE = '\n';
+                         int area;  
+                         
+                         area = LENGTH * WIDTH;
+                         printf("value of area : %d", area);
+                         printf("%c", NEWLINE);
+                      
+                         return 0;
+                      }
+                  </code>
+                </b>
+                <p>When the above code is compiled and executed, it produces the following result −</p>
+                <b>
+                  <code>
+                    value of area : 50
+                  </code>
+                </b>
+                <p>Note that it is a good programming practice to define constants in CAPITALS.</p>
+              </article>
+            </section>        
+            <section id="Decision Making" class="main-section">
+              <header>
+                <h2>Decision Making in C</h2>
+                </header>
+              <article>
+                <p>Decision making structures require that the programmer specifies one or more conditions to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.</p>
+                <p>C programming language assumes any non-zero and non-null values as true, and if it is either zero or null, then it is assumed as false value.</p>
+                  <ol>
+                  <li><h4>if statement:</h4>
+                    An if statement consists of a boolean expression followed by one or more statements.</li>
+                  <li>An if statement can be followed by an optional else statement, which executes when the Boolean expression is false.</li>
+                  <li><h4>nested if statements:</h4>
+                    You can use one if or else if statement inside another if or else if statement(s).</li>
+                  <li><h4>switch statement:</h4>
+                    A switch statement allows a variable to be tested for equality against a list of values.</li>
+                  <li><h4>nested switch statements:</h4>
+                    You can use one switch statement inside another switch statement(s).</li>
+                </ol>
+                <h3>The ? : Operator</h3>
+                <p>
+                  We have covered conditional operator ? : in the previous chapter which can be used to replace if...else statements. It has the following general form −<br>                  
+                  Exp1 ? Exp2 : Exp3;<br>
+                  Where Exp1, Exp2, and Exp3 are expressions. Notice the use and placement of the colon.<br>
+                  
+                  The value of a ? expression is determined like this −<br>
+                  
+                  Exp1 is evaluated. If it is true, then Exp2 is evaluated and becomes the value of the entire ? expression.<br>
+                  If Exp1 is false, then Exp3 is evaluated and its value becomes the value of the expression.</p>
+              </article>
+            </section>
+        
+            <section id="Loops" class="main-section">
+              <header>
+                <h2>Loops in C</h2>
+              </header>
+              <article>
+              <p>You may encounter situations, when a block of code needs to be executed several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.
+        
+                Programming languages provide various control structures that allow for more complicated execution paths.
+                
+                A loop statement allows us to execute a statement or group of statements multiple times.</p>
+              <p>Given below is the general form of a loop statement in most of the programming languages −
+        
+                Loop Architecture</p>
+              <img src="https://www.tutorialspoint.com/cprogramming/images/loop_architecture.jpg">
+              <table class="table table-bordered">
+                <tbody><tr>
+                <th style="text-align:center;">Sr.No.</th>
+                <th style="text-align:center;">Loop Type &amp; Description</th>
+                </tr>
+                <tr>
+                <td class="ts">1</td>
+                <td>while loop
+                <p>
+                  "Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body."
+                  </p>
+                </td>
+              </tr>
+                <tr>
+                <td class="ts">2</td>
+                <td>for loop
+                <p>
+                  Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+                </p>
+              </td>
+                </tr>
+                <tr>
+                <td class="ts">3</td>
+                <td>do...while loop
+                <p>
+                  It is more like a while statement, except that it tests the condition at the end of the loop body.</p></td>
+                </tr>
+                <tr>
+                <td class="ts">4</td>
+                <td>nested loops
+                <p>You can use one or more loops inside any other while, for, or do..while loop.</p></td>
+                </tr>
+                </tbody></table>
+                <p>C supports the following control statements.</p>
+                <table class="table table-bordered">
+                  <tbody><tr>
+                  <th style="text-align:center;">Sr.No.</th>
+                  <th style="text-align:center;">Control Statement &amp; Description</th>
+                  </tr>
+                  <tr>
+                  <td class="ts">1</td>
+                  <td><h4>break statement</h4>
+                  <p>Terminates the <b>loop</b> or <b>switch</b> statement and transfers execution to the statement immediately following the loop or switch.</p></td>
+                  </tr>
+                  <tr>
+                  <td class="ts">2</td>
+                  <td><h4>continue statement</h4>
+                  <p>Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.</p></td>
+                  </tr>
+                  <tr>
+                  <td class="ts">3</td>
+                  <td><h4>goto statement</h4>
+                  <p>Transfers control to the labeled statement.</p></td>
+                  </tr>
+                  </tbody></table>
+                  <h4>The Infinite Loop</h4>
+                  A loop becomes an infinite loop if a condition never becomes false. The for loop is traditionally used for this purpose. Since none of the three expressions that form the 'for' loop are required, you can make an endless loop by leaving the conditional expression empty.
+                  <code>
+                   #include &lt;stdio.h&gt;
+                    int main () {
+                    for( ; ; ) {
+                    printf("This loop will run forever.\n");
+                         }
+                   return 0;
+                    }</code>
+                    <p>When the conditional expression is absent, it is assumed to be true. You may have an initialization and increment expression, but C programmers more commonly use the for(;;) construct to signify an infinite loop.
+        
+                      </p><h4>NOTE</h4> − You can terminate an infinite loop by pressing Ctrl + C keys.<p></p>
+              </article>
+            </section>
+        
+            <section id="Functions" class="main-section">
+              <header>
+                <h2>Functions in C</h2>
+              </header>
+              <article>
+              <p>A function is a group of statements that together perform a task. Every C program has at least one function, which is main(), and all the most trivial programs can define additional functions.
+        
+                You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division is such that each function performs a specific task.</p>
+                <p>A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.</p>
+                <p>The C standard library provides numerous built-in functions that your program can call. For example, strcat() to concatenate two strings, memcpy() to copy one memory location to another location, and many more functions.
+        
+                  A function can also be referred as a method or a sub-routine or a procedure, etc.</p>
+                  <h3>Defining a Function</h3>
+                  <p>The general form of a function definition in C programming language is as follows −
+                    <code>
+                    return_type function_name( parameter list ) {
+                       body of the function
+                    }</code></p>
+                    <p>A function definition in C programming consists of a function header and a function body. Here are all the parts of a function −</p>
+                  <ul class="list">
+                    <li><p><b>Return Type</b> − A function may return a value. The <b>return_type</b> is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword <b>void</b>.</p></li>
+                    <li><p><b>Function Name</b> − This is the actual name of the function. The function name and the parameter list together constitute the function signature.</p></li>
+                    <li><p><b>Parameters</b> − A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters.</p></li>
+                    <li><p><b>Function Body</b> − The function body contains a collection of statements that define what the function does.</p></li>
+                    </ul>
+                    <h3>Example</h3>
+                      <p>Given below is the source code for a function called max(). This function takes two parameters num1 and num2 and returns the maximum value between the two −</p>
+                      <b>
+                      <code>
+                      /* function returning the max between two numbers */
+                      int max(int num1, int num2) {
+                      
+                         /* local variable declaration */
+                         int result;
+                       
+                         if (num1 &gt; num2)
+                            result = num1;
+                         else
+                            result = num2;
+                       
+                         return result; 
+                      }</code>
+                    </b>
+             </article>
+            </section>        
+            <section id="Function_declarations" class="main-section">
+              <header>
+                <h2>Function declarations in C</h2>
+              </header>
+              <article>
+                <p>A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.
+        
+                  A function declaration has the following parts −<br>
+                  <code>
+                  return_type function_name( parameter list );</code>
+                  For the above defined function max(), the function declaration is as follows −
+                  <code>
+                  int max(int num1, int num2);</code>
+                  Parameter names are not important in function declaration only their type is required, so the following is also a valid declaration −
+                  <code>
+                  int max(int, int);</code>
+                  Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.</p>
+                  <h3>Calling a Function</h3>
+                  <p>While creating a C function, you give a definition of what the function has to do. To use a function, you will have to call that function to perform the defined task.
+        
+                  When a program calls a function, the program control is transferred to the called function. A called function performs a defined task and when its return statement is executed or when its function-ending closing brace is reached, it returns the program control back to the main program.
+        
+                  To call a function, you simply need to pass the required parameters along with the function name, and if the function returns a value, then you can store the returned value. For example −
+                 </p>
+                 <b>
+                 <code>
+                  #include &lt;stdio.h&gt;
+                   
+                  /* function declaration */
+                  int max(int num1, int num2);
+                   
+                  int main () {
+                  
+                     /* local variable definition */
+                     int a = 100;
+                     int b = 200;
+                     int ret;
+                   
+                     /* calling a function to get max value */
+                     ret = max(a, b);
+                   
+                     printf( "Max value is : %d\n", ret );
+                   
+                     return 0;
+                  }
+                   
+                  /* function returning the max between two numbers */
+                  int max(int num1, int num2) {
+                  
+                     /* local variable declaration */
+                     int result;
+                   
+                     if (num1 &gt; num2)
+                        result = num1;
+                     else
+                        result = num2;
+                   
+                     return result; 
+                  }</code>
+                  </b>
+                  We have kept max() along with main() and compiled the source code. While running the final executable, it would produce the following result −<br>                
+                  Max value is : 200<br>
+                  <h3>Function Argument</h3>
+                  <p>If a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function.        
+                    Formal parameters behave like other local variables inside the function and are created upon entry into the function and destroyed upon exit.                    
+                    While calling a function, there are two ways in which arguments can be passed to a function −</p>
+                  <table id="tab">
+                    <tbody>
+                    </tbody><thead>
+                    <tr>
+                      <th>S.No</th>
+                      <th>Call Type and Description</th> 
+                      </tr> 
+                      <tr>
+                        <td>1.</td>
+                        <td><h3>Call by Value</h3>
+                        <p>This method copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument.</p>
+                      </td>
+                      </tr> 
+                      <tr>
+                        <td>2.</td>
+                        <td><h3>Call by Reference</h3><p>This method copies the address of an argument into the formal parameter. Inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.</p></td>
+                      </tr>          
+                    </thead>                    
+                  </table>
+                  <p>By default, C uses <b>call by value</b> to pass arguments. In general, it means the code within a function cannot alter the arguments used to call the function.</p>
+                  </article>
+                  </section>
+                  <section id="Arrays" class="main-section">
+                    <header>
+                      <h2>Arrays in C</h2>
+                    </header>
+                    <article>
+                      <p>Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</p>
+                      <p>Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables. A specific element in an array is accessed by an index.</p>
+                      <p>Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables. A specific element in an array is accessed by an index.
+                      </p>
+                      <h3>Declaring Arrays</h3>
+                      <p>To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows −
+                      </p>
+                      <code>type arrayName [ arraySize ];</code>
+                       <p>This is called a single-dimensional array. The arraySize must be an integer constant greater than zero and type can be any valid C data type. For example, to declare a 10-element array called balance of type double, use this statement −        
+                      <b>double balance[10];</b><br>.
+                     Here balance is a variable array which is sufficient to hold up to 10 double numbers.
+                      </p>
+                      <h3>Initialising Arrays</h3>
+                      <p>You can initialize an array in C either one by one or using a single statement as follows −<br>
+        
+                        <b>double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};</b><br>
+                        The number of values between braces { } cannot be larger than the number of elements that we declare for the array between square brackets [ ].<br>
+                        If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write −<br>
+                        <b>
+                        double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};</b><br>
+                        You will create exactly the same array as you did in the previous example. Following is an example to assign a single element of the array −<br>
+                        <b>
+                        balance[4] = 50.0;</b><br>
+                        The above statement assigns the 5th element in the array with a value of 50.0. All arrays have 0 as the index of their first element which is also called the base index and the last index of an array will be total size of the array minus 1. Shown below is the pictorial representation of the array we discussed above −</p>
+                      <img src="https://www.tutorialspoint.com/cprogramming/images/array_presentation.jpg">
+                      <h3>Accesing Array Elements</h3>
+                      <p>An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array. For example −
+        
+                        double salary = balance[9];
+                        The above statement will take the 10th element from the array and assign the value to salary variable. The following example Shows how to use all the three above mentioned concepts viz. declaration, assignment, and accessing arrays −
+                        </p>
+                        <b>
+                        <code>
+                      #include &lt;stdio.h&gt;
+                        int main () {
+                        int n[ 10 ]; /* n is an array of 10 integers */
+                        int i,j;
+         
+                      /* initialize elements of array n to 0 */         
+                      for ( i = 0; i &lt; 10; i++ ) {
+                       n[ i ] = i + 100; /* set element at location i to i + 100 */
+                          }
+           
+                       /* output each array element's value */
+                        for (j = 0; j &lt; 10; j++ ) {
+                         printf("Element[%d] = %d\n", j, n[j] );
+                        }
+         
+                     return 0;
+                       }
+                        </code>
+                        </b>
+                        <p>When the above code is compiled and executed, it produces the following result −</p>
+                        <b>
+                          <code>
+                          Element[0] = 100
+                          Element[1] = 101
+                          Element[2] = 102
+                          Element[3] = 103
+                          Element[4] = 104
+                          Element[5] = 105
+                          Element[6] = 106
+                          Element[7] = 107
+                          Element[8] = 108    
+                          Element[9] = 109          
+                            </code>
+                            </b>
+                      </article>
+                  </section>
+                  <section id="Pointers" class="main-section">
+                    <header>
+                      <h3>Pointers in C</h3>
+                      <article>
+                      <p>Pointers in C are easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers. So it becomes necessary to learn pointers to become a perfect C programmer. Let's start learning them in simple and easy steps.</p>
+                      <p>As you know, every variable is a memory location and every memory location has its address defined which can be accessed using ampersand (&amp;) operator, which denotes an address in memory. Consider the following example, which prints the address of the variables defined −</p>
+                      <code>
+                       <b> #include &lt;stdio.h&gt;
+        
+                          int main () {
+                          
+                             int  var1;
+                             char var2[10];
+                          
+                             printf("Address of var1 variable: %x\n", &amp;var1  );
+                             printf("Address of var2 variable: %x\n", &amp;var2  );
+                          
+                             return 0;
+                          }</b>
+                      </code>
+                      <p>When the above code is compiled and executed, it produces the following result −</p>
+                      <p>
+                        <code><b>
+                        Address of var1 variable: bff5a400
+                        Address of var2 variable: bff5a3f6
+                      </b></code>
+                      </p>
+                      <h3>What are Pointers?</h3>
+                      <p>A pointer is a variable whose value is the address of another variable, i.e., direct address of the memory location. Like any variable or constant, you must declare a pointer before using it to store any variable address. The general form of a pointer variable declaration is −</p>
+                      <code>type *var-name;</code>
+                      <p>Here, type is the pointer's base type; it must be a valid C data type and var-name is the name of the pointer variable. The asterisk * used to declare a pointer is the same asterisk used for multiplication. However, in this statement the asterisk is being used to designate a variable as a pointer. Take a look at some of the valid pointer declarations −</p>
+                      <code>int *ip;    /* pointer to an integer */
+                        double *dp;    /* pointer to a double */
+                        float  *fp;    /* pointer to a float */
+                        char   *ch     /* pointer to a character */</code>
+                        <p>The actual data type of the value of all pointers, whether integer, float, character, or otherwise, is the same, a long hexadecimal number that represents a memory address. The only difference between pointers of different data types is the data type of the variable or constant that the pointer points to.</p>
+                        <h3>How to use Pointers?</h3>
+                        <p>There are a few important operations, which we will do with the help of pointers very frequently.</p>
+                        <ul>
+                          <li>We define a pointer variable</li>
+                          <li>assign the address of a variable to a pointer and</li>
+                          <li>finally access the value at the address available in the pointer variable.</li>                  
+                        </ul>
+                        <p>This is done by using unary operator * that returns the value of the variable located at the address specified by its operand. The following example makes use of these operations −</p>
+                        <code>
+                          #include &lt;stdio.h&gt;
+                          
+                          int main () {
+                          
+                             int  var = 20;   /* actual variable declaration */
+                             int  *ip;        /* pointer variable declaration */
+                          
+                             ip = &amp;var;  /* store address of var in pointer variable*/
+                          
+                             printf("Address of var variable: %x\n", &amp;var  );
+                          
+                             /* address stored in pointer variable */
+                             printf("Address stored in ip variable: %x\n", ip );
+                          
+                             /* access the value using the pointer */
+                             printf("Value of *ip variable: %d\n", *ip );
+                          
+                             return 0;
+                          }</code>
+                          <p>When the above code is compiled and executed, it produces the following result −</p>
+                          <code><b>
+                            Address of var variable: bffd8b3c
+                            Address stored in ip variable: bffd8b3c
+                            Value of *ip variable: 20</b></code>
+                            <h3>Null Pointers</h3>
+                            <p>It is always a good practice to assign a NULL value to a pointer variable in case you do not have an exact address to be assigned. This is done at the time of variable declaration. A pointer that is assigned NULL is called a <b> null</b> pointer.</p>
+                            <p>The NULL pointer is a constant with a value of zero defined in several standard libraries. Consider the following program −</p>
+                            <code><b>
+                              #include &lt;stdio.h&gt;
+                              int main () {
+                              int  *ptr = NULL;
+                              printf("The value of ptr is : %x\n", ptr  );                       
+                              return 0;
+                              }</b></code>
+                              <p>When the above code is compiled and executed, it produces the following result −</p>
+                              <code><b>The value of ptr is 0</b></code>
+                              <p>In most of the operating systems, programs are not permitted to access memory at address 0 because that memory is reserved by the operating system. However, the memory address 0 has special significance; it signals that the pointer is not intended to point to an accessible memory location. But by convention, if a pointer contains the null (zero) value, it is assumed to point to nothing.</p>
+                              <p>To check for a null pointer, you can use an 'if' statement as follows −</p>
+                              <b><code>  
+                                if(ptr)     /* succeeds if p is not null */
+                                if(!ptr)    /* succeeds if p is null */</code></b>
+                                <p>These are the basics of Pointers.Now let us see about basic concept on Strings----</p>
+                      </article>
+                    </header>
+                    </section>
+                    <section id="Strings" class="main-section">
+                      <header>
+                        <h2>Strings in C</h2>
+                      </header>
+                      <article>
+                        <p>
+                          Strings are actually one-dimensional array of characters terminated by a null character '\0'. Thus a null-terminated string contains the characters that comprise the string followed by a null.
+                        </p>
+                        <p>
+                         The following declaration and initialization create a string consisting of the word "Hello". To hold the null character at the end of the array, the size of the character array containing the string is one more than the number of characters in the word "Hello."
+                        </p>
+                        <b>
+                          <code>
+                            char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+                          </code>
+                        </b>
+                        <p>If you follow the rule of array initialization then you can write the above statement as follows −</p>
+                        <b>
+                          <code>
+                            char greeting[] = "Hello";
+                          </code>
+                        </b>
+                        <p>Following is the memory presentation of the above defined string in C/C++ −</p>
+                        <img src="https://www.tutorialspoint.com/cprogramming/images/string_representation.jpg">
+                        <p>
+                          Actually, you do not place the null character at the end of a string constant. The C compiler automatically places the '\0' at the end of the string when it initializes the array. Let us try to print the above mentioned string −
+                        </p> 
+                        <b>
+                          <code>
+                            #include &lt;stdio.h&gt;
+                              int main () {                      
+                                 char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+                                 printf("Greeting message: %s\n", greeting );
+                                 return 0;
+                              }
+                          </code>
+                        </b>
+                        <p>When the above code is compiled and executed, it produces the following result −</p>
+                        <b>
+                          <code>Greeting message: Hello</code>
+                        </b>
+                        <p>C supports a wide range of functions that manipulate null-terminated strings −</p>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Sr.No.</th>
+                              <th>Functions and Purpose</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                            <td>1.</td>
+                            <th>strcpy(s1, s2);<p>Copies string s2 into string s1</p></th>
+                            </tr>
+                            <tr>
+                              <td>2.</td>
+                              <th>strcat(s1, s2);<p>Concatenates string s2 onto the end of string s1.</p></th>
+                            </tr>
+                            <tr>
+                              <td>3.</td>
+                              <th>strlen(s1);<p>Returns the length of string s1.</p></th>
+                            </tr>
+                            <tr>
+                              <td>4.</td>
+                              <th>strcmp(s1, s2);<p>Returns 0 if s1 and s2 are the same; less than 0 if s1<s2; greater="" than="" 0="" if="" s1="">s2.</s2;></p></th>
+                              </tr>
+                              <tr>
+                                <td>5.</td>
+                                <th>strchr(s1, ch);<p>Returns a pointer to the first occurrence of character ch in string s1.</p></th>
+                              </tr>
+                              <tr>
+                                <td>6.</td>
+                                <th>strstr(s1, s2);<p>Returns a pointer to the first occurrence of string s2 in string s1.</p></th>
+                              </tr>                  
+                          </tbody>
+                        </table>
+                        <p>The following example uses some of the above-mentioned functions −</p>
+                        <b><code>                  
+                        #include &lt;stdio.h&gt;
+                        #include &lt;string.h&gt;
+        
+                       int main () {
+        
+                       char str1[12] = "Hello";
+                       char str2[12] = "World";
+                       char str3[12];
+                       int  len ;
+        
+                     /* copy str1 into str3 */
+                      strcpy(str3, str1);
+                     printf("strcpy( str3, str1) :  %s\n", str3 );
+        
+                      /* concatenates str1 and str2 */
+                     strcat( str1, str2);
+                     printf("strcat( str1, str2):   %s\n", str1 );
+        
+                     /* total lenghth of str1 after concatenation */
+                      len = strlen(str1);
+                     printf("strlen(str1) :  %d\n", len );
+        
+                      return 0;
+                     }
+                        </code></b>
+                        <p>When the above code is compiled and executed, it produces the following result −</p>
+                        <b>
+                          <code>
+                            strcpy( str3, str1) :  Hello
+                            strcat( str1, str2):   HelloWorld
+                            strlen(str1) :  10</code>
+                        </b>
+                      </article>
+                    </section>
+                    <section id="Structure" class="main-section"></section>
+                    <header><h2>Structure in C</h2></header>
+                    <article>
+                      <p>Arrays allow to define type of variables that can hold several data items of the same kind. Similarly structure is another user defined data type available in C that allows to combine data items of different kinds.</p>
+                      <p>Structures are used to represent a record. Suppose you want to keep track of your books in a library. You might want to track the following attributes about each book −</p>
+                      <ul>
+                        <li>Title</li>
+                        <li>Author</li>
+                        <li>Subject</li>
+                        <li>Book ID</li>                
+                      </ul>
+                      <h3>Defining a Structure</h3>
+                      <p>To define a structure, you must use the struct statement. The struct statement defines a new data type, with more than one member. The format of the struct statement is as follows −</p>
+                      <b>
+                        <code>
+                          struct [structure tag] {
+        
+                            member definition;
+                            member definition;
+                            ...
+                            member definition;
+                         } [one or more structure variables];  
+                        </code>
+                      </b>
+                      <p>he structure tag is optional and each member definition is a normal variable definition, such as int i; or float f; or any other valid variable definition. At the end of the structure's definition, before the final semicolon, you can specify one or more structure variables but it is optional. Here is the way you would declare the Book structure −</p>
+                      <b>
+                        <code>
+                          struct Books {
+                            char  title[50];
+                            char  author[50];
+                            char  subject[100];
+                            int   book_id;
+                         } book;  
+                        </code>
+                      </b>
+                      <h3>Accesing Structure Members</h3>
+                      <p>
+                        To access any member of a structure, we use the member access operator (.). The member access operator is coded as a period between the structure variable name and the structure member that we wish to access. You would use the keyword struct to define variables of structure type. The following example shows how to use a structure in a program −
+                      </p>
+                      <b>
+                        <code>           
+                         #include &lt;stdio.h&gt;
+                          #include &lt;string.h&gt; 
+                          struct Books {
+                           char  title[50];
+                           char  author[50];
+                           char  subject[100];
+                          int   book_id;
+                           };
+         
+                        int main( ) {
+        
+                        struct Books Book1;        /* Declare Book1 of type Book */
+                        struct Books Book2;        /* Declare Book2 of type Book */
+         
+                       /* book 1 specification */
+                       strcpy( Book1.title, "C Programming");
+                        strcpy( Book1.author, "Kanetkar"); 
+                        strcpy( Book1.subject, "C Programming Tutorial");
+                       Book1.book_id = 6495407;
+        
+                      /* book 2 specification */
+                        strcpy( Book2.title, "Telecom Billing");
+                        strcpy( Book2.author, "Ruisso");
+                         strcpy( Book2.subject, "Telecom Billing Tutorial");
+                          Book2.book_id = 6495700;
+         
+                       /* print Book1 info */
+                      printf( "Book 1 title : %s\n", Book1.title);
+                       printf( "Book 1 author : %s\n", Book1.author);
+                        printf( "Book 1 subject : %s\n", Book1.subject);
+                         printf( "Book 1 book_id : %d\n", Book1.book_id);
+        
+                       /* print Book2 info */
+                        printf( "Book 2 title : %s\n", Book2.title);
+                         printf( "Book 2 author : %s\n", Book2.author);
+                          printf( "Book 2 subject : %s\n", Book2.subject);
+                           printf( "Book 2 book_id : %d\n", Book2.book_id);
+        
+                            return 0;
+                             }
+                        </code>
+                      </b>
+                      <p>When the above code is compiled and executed, it produces the following result −</p>
+                      <ul class="list1">
+                        <li>Book 1 title : C Programming</li>
+                        <li>Book 1 author : Kanetkar</li>
+                        <li>Book 1 subject : C Programming Tutorial</li>
+                        <li>Book 1 book_id : 6495407</li>
+                        <li>Book 2 title : Telecom Billing</li>
+                        <li>Book 2 author : Ruisso</li>
+                        <li>Book 2 subject : Telecom Billing Tutorial</li>
+                        <li>Book 2 book_id : 6495700</li>
+                      </ul>
+                      <h3>Structure as Function Arguments</h3>
+                      <p>You can pass a structure as a function argument in the same way as you pass any other variable or pointer.</p>
+                      <b>
+                        <code>
+                          #include &lt;stdio.h&gt;
+                            #include &lt;string.h&gt;
+                           struct Books {
+                           char  title[50];
+                           char  author[50];
+                           char  subject[100];
+                           int   book_id;
+                            };
+        
+                            /* function declaration */
+                          void printBook( struct Books book );
+        
+                           int main( ) {
+        
+                           struct Books Book1;        /* Declare Book1 of type Book */
+                           struct Books Book2;        /* Declare Book2 of type Book */
+         
+                          /* book 1 specification */
+                          strcpy( Book1.title, "C Programming");
+                         strcpy( Book1.author, "Nuha Ali"); 
+                         strcpy( Book1.subject, "C Programming Tutorial");
+                         Book1.book_id = 6495407;
+        
+                         /* book 2 specification */
+                        strcpy( Book2.title, "Telecom Billing");
+                         strcpy( Book2.author, "Zara Ali");
+                      strcpy( Book2.subject, "Telecom Billing Tutorial");
+                         Book2.book_id = 6495700;
+         
+                       /* print Book1 info */
+                       printBook( Book1 );
+        
+                       /* Print Book2 info */
+                       printBook( Book2 );
+        
+                        return 0;
+                          }
+        
+                       void printBook( struct Books book ) {
+        
+                        printf( "Book title : %s\n", book.title);
+                        printf( "Book author : %s\n", book.author);
+                        printf( "Book subject : %s\n", book.subject);
+                        printf( "Book book_id : %d\n", book.book_id);
+                        }
+                      </code>
+                      </b>
+                      <p>When the above code is compiled and executed, it produces the following result −</p>
+                      <b>
+                        <code>
+                          <ul>
+                            <li>Book title : C Programming</li>
+                            <li>Book author : Nuha Ali</li>
+                            <li>Book subject : C Programming Tutorial</li>
+                            <li>Book subject : C Programming Tutorial</li>
+                            <li>Book title : Telecom Billing</li>
+                            <li>Book author : Zara Ali</li>
+                            <li>Book subject : Telecom Billing Tutorial</li>
+                            <li>Book book_id : 6495700</li>
+                          </ul>
+                        </code>
+                      </b>
+                      <h3>Pointers to Structures</h3>
+                      <p>You can define pointers to structures in the same way as you define pointer to any other variable −
+                        <code>
+                        struct Books *struct_pointer;
+                        </code>
+                        Now, you can store the address of a structure variable in the above defined pointer variable. To find the address of a structure variable, place the '&amp;'; operator before the structure's name as follows −
+                        <code>
+                          struct_pointer = &amp;Book1;
+                        </code></p>
+                        <p>To access the members of a structure using a pointer to that structure, you must use the → operator as follows −</p>
+                        <b>
+                          <code>
+                            struct_pointer-&gt;title;
+                          </code>
+                        </b>
+                        <p>Let us re-write the above example using structure pointer.</p>
+                        <b>
+                          <code>
+                            #include <stdio.h>
+                              #include <string.h>
+                               
+                              struct Books {
+                                 char  title[50];
+                                 char  author[50];
+                                 char  subject[100];
+                                 int   book_id;
+                              };
+                              
+                              /* function declaration */
+                              void printBook( struct Books *book );
+                              int main( ) {
+                              
+                                 struct Books Book1;        /* Declare Book1 of type Book */
+                                 struct Books Book2;        /* Declare Book2 of type Book */
+                               
+                                 /* book 1 specification */
+                                 strcpy( Book1.title, "C Programming");
+                                 strcpy( Book1.author, "Nuha Ali"); 
+                                 strcpy( Book1.subject, "C Programming Tutorial");
+                                 Book1.book_id = 6495407;
+                              
+                                 /* book 2 specification */
+                                 strcpy( Book2.title, "Telecom Billing");
+                                 strcpy( Book2.author, "Zara Ali");
+                                 strcpy( Book2.subject, "Telecom Billing Tutorial");
+                                 Book2.book_id = 6495700;
+                               
+                                 /* print Book1 info by passing address of Book1 */
+                                 printBook( &amp;Book1 );
+                              
+                                 /* print Book2 info by passing address of Book2 */
+                                 printBook( &amp;Book2 );
+                              
+                                 return 0;
+                              }
+                              
+                              void printBook( struct Books *book ) {
+                              
+                                 printf( "Book title : %s\n", book-&gt;title);
+                                 printf( "Book author : %s\n", book-&gt;author);
+                                 printf( "Book subject : %s\n", book-&gt;subject);
+                                 printf( "Book book_id : %d\n", book-&gt;book_id);
+                              }
+                          </string.h></stdio.h></code>
+                        </b>
+                        <p>When the above code is compiled and executed, it produces the following result −</p>
+                        <b>
+                          <code>
+                              Book title : C Programming
+                              Book author : Nuha Ali
+                              Book subject : C Programming Tutorial
+                              Book book_id : 6495407
+                              Book title : Telecom Billing
+                              Book author : Zara Ali
+                              Book subject : Telecom Billing Tutorial
+                              Book book_id : 6495700
+                          </code>
+                        </b>
+                    </article>
+                    <section id="Unions" class="main-section">
+                      <header>
+                        <h2>Unions in C</h2>
+                        </header>
+                        <article>
+                         <p> A union is a special data type available in C that allows to store different data types in the same memory location. You can define a union with many members, but only one member can contain a value at any given time. Unions provide an efficient way of using the same memory location for multiple-purpose.
+                           </p>
+                           <h3>Defining Union</h3>
+                           <p>To define a union, you must use the union statement in the same way as you did while defining a structure. The union statement defines a new data type with more than one member for your program. The format of the union statement is as follows −</p>
+                        <b>
+                          <code>
+                            union [union tag] {
+                              member definition;
+                              member definition;
+                              ...
+                              member definition;
+                           } [one or more union variables];  
+                          </code>
+                        </b>
+                        <p>The union tag is optional and each member definition is a normal variable definition, such as int i; or float f; or any other valid variable definition. At the end of the union's definition, before the final semicolon, you can specify one or more union variables but it is optional. Here is the way you would define a union type named Data having three members i, f, and str −</p>
+                        <b>
+                          <code>
+                            union Data {
+                              int i;
+                              float f;
+                              char str[20];
+                           } data;  
+                           <p>
+                            Now, a variable of Data type can store an integer, a floating-point number, or a string of characters. It means a single variable, i.e., same memory location, can be used to store multiple types of data. You can use any built-in or user defined data types inside a union based on your requirement.
+        
+                            The memory occupied by a union will be large enough to hold the largest member of the union. For example, in the above example, Data type will occupy 20 bytes of memory space because this is the maximum space which can be occupied by a character string. The following example displays the total memory size occupied by the above union −
+                           </p>
+                          </code>
+                        </b>
+                        <b>
+                          <code>
+                            #include &lt;stdio.h&gt;
+                              #include &lt;string.h&gt;                       
+                              union Data {
+                                 int i;
+                                 float f;
+                                 char str[20];
+                              };
+                               
+                              int main( ) {
+                              
+                                 union Data data;        
+                              
+                                 printf( "Memory size occupied by data : %d\n", sizeof(data));
+                              
+                                 return 0;
+                              }
+                          </code>
+                        </b>
+                        <p>
+                          When the above code is compiled and executed, it produces the following result −
+                        </p>
+                        <b>
+                          <code>
+                            Memory size occupied by data : 20
+                          </code>
+                        </b>
+                        <h3>Accessing Union Members</h3>
+                        <p>
+                          To access any member of a union, we use the member access operator (.). The member access operator is coded as a period between the union variable name and the union member that we wish to access. You would use the keyword union to define variables of union type. The following example shows how to use unions in a program −
+                        </p>
+                        <b>
+                          <code>
+                            #include &lt;stdio.h&gt;
+                              #include &lt;string.h&gt;
+                               
+                              union Data {
+                                 int i;
+                                 float f;
+                                 char str[20];
+                              };
+                               
+                              int main( ) {
+                              
+                                 union Data data;        
+                              
+                                 data.i = 10;
+                                 data.f = 220.5;
+                                 strcpy( data.str, "C Programming");
+                              
+                                 printf( "data.i : %d\n", data.i);
+                                 printf( "data.f : %f\n", data.f);
+                                 printf( "data.str : %s\n", data.str);
+                              
+                                 return 0;
+                              }
+                          </code>
+                        </b>
+                        <p>When the above code is compiled and executed, it produces the following result −</p>
+                        <b>
+                          <code>
+                            data.i : 1917853763
+                            data.f : 4122360580327794860452759994368.000000
+                            data.str : C Programming
+                          </code>
+                        </b>
+                        <p>Here, we can see that the values of i and f members of union got corrupted because the final value assigned to the variable has occupied the memory location and this is the reason that the value of str member is getting printed very well.</p>
+                        <p>Now let's look into the same example once again where we will use one variable at a time which is the main purpose of having unions −
+                        </p>
+                        <b>
+                          <code>
+                            #include &lt;stdio.h&gt;
+                              #include &lt;string.h&gt;
+                               
+                              union Data {
+                                 int i;
+                                 float f;
+                                 char str[20];
+                              };
+                               
+                              int main( ) {
+                              
+                                 union Data data;        
+                              
+                                 data.i = 10;
+                                 printf( "data.i : %d\n", data.i);
+                                 
+                                 data.f = 220.5;
+                                 printf( "data.f : %f\n", data.f);
+                                 
+                                 strcpy( data.str, "C Programming");
+                                 printf( "data.str : %s\n", data.str);
+                              
+                                 return 0;
+                              }
+                          </code>
+                        </b>
+                        <p>When the above code is compiled and executed, it produces the following result −</p>
+                        <b>
+                          <code>
+                            data.i : 10
+                            data.f : 220.500000
+                            data.str : C Programming
+                          </code>
+                        </b>
+                        <p>Here, all the members are getting printed very well because one member is being used at a time.</p>
+                          </article>
+                        </section>
+            <section id="Reference" class="main-section">
+              <header>
+                <h2>Reference</h2>Now let's look into the same example once again where we will use one variable at a time which is the main purpose of having unions −      
+        
+              </header>
+              <article>
+              <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></p>
+              </article>
+            </section>
+          </section></main>
+      </body>
+</html>
